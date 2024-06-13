@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с формами</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form id="reg" action="">
+        <label for="login">введите логин</label><br>
+        <input class="form-item" type="text" name="login" id="login" placeholder="Введите логин" required><br>
+        <label for="password">Введите пароль</label><br>
+        <input class="form-item" type="password" name="password" id="password" placeholder="Введите пароль" required><br>
+
+        <label for="email">Введите почту</label><br>
+        <input class="form-item" type="email" name="email" id="email" required placeholder="example@gmail.com"><br>
+
+        <label for="age">Введите возраст</label><br>
+        <input type="number" name="age" id="age" max="100" min="0" step="1">
+        <br>
+        <input type="radio" name="gender" id="gender-f" value="female">
+        <label for="gender-f">Женщина</label>
+        <input type="radio" name="gender" id="gender-m" value="male" checked>
+        <label for="gender-m">Мужчина</label>
+        <br>
+        <label for="city">Выберите город</label>
+        <br>
+        <select name="city" id="city">
+            <option disabled selected>Выберите город</option>
+            <option value="msk">msk</option>
+            <option value="sf">sf</option>
+            <option value="spb">spb</option>
+        </select>
+        <br>
+        <label for="about">Информация о себе</label>
+        <br>
+        <textarea name="about" id="about" cols="30" rows="10"></textarea>
+        <br>
+        <input type="checkbox" name="agreement" id="agreement" required>
+        <label for="agreement">Согласие</label>
+        <br>
+        <input class="form-btn" type="submit" value="Зарегистрировать"><br>
+        <input class="form-btn" type="reset" name="" id="">
+    </form>
+</body>
+</html>
